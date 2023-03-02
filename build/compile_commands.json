@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/rohit/Desktop/Coding/C++/OpenCV/build",
+  "command": "/usr/bin/g++ -isystem /usr/local/include/opencv4 -O3 -DNDEBUG -o CMakeFiles/main.dir/basics/warp_perspective.cpp.o -c /home/rohit/Desktop/Coding/C++/OpenCV/basics/warp_perspective.cpp",
+  "file": "/home/rohit/Desktop/Coding/C++/OpenCV/basics/warp_perspective.cpp"
+}
+]
