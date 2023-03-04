@@ -147,7 +147,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=learn
+CMAKE_PROJECT_NAME:STATIC=virtual_paint
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=0.1.0
@@ -290,6 +290,9 @@ CTEST_SUBMIT_RETRY_DELAY:STRING=5
 //Maximum time allowed before CTest will kill the test.
 DART_TESTING_TIMEOUT:STRING=1500
 
+//Path to a program.
+GITCOMMAND:FILEPATH=/usr/bin/git
+
 //Command to build the project
 MAKECOMMAND:STRING=/usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 
@@ -313,6 +316,15 @@ learn_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 learn_SOURCE_DIR:STATIC=/home/rohit/Desktop/Coding/C++/OpenCV
+
+//Value Computed by CMake
+virtual_paint_BINARY_DIR:STATIC=/home/rohit/Desktop/Coding/C++/OpenCV/build
+
+//Value Computed by CMake
+virtual_paint_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+virtual_paint_SOURCE_DIR:STATIC=/home/rohit/Desktop/Coding/C++/OpenCV
 
 
 ########################
@@ -504,6 +516,8 @@ CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
 //Details about finding OpenCV
 FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr/local][v4.7.0()]
+//ADVANCED property for variable: GITCOMMAND
+GITCOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MAKECOMMAND
 MAKECOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MEMORYCHECK_COMMAND

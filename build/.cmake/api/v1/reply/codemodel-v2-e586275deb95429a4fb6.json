@@ -55,7 +55,7 @@
 					[
 						0
 					],
-					"name" : "learn",
+					"name" : "virtual_paint",
 					"targetIndexes" : 
 					[
 						0,
@@ -290,9 +290,9 @@
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "main::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-main-Release-6a8b7a9c64ae0e844d2c.json",
-					"name" : "main",
+					"id" : "virtual_paint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-virtual_paint-Release-529c38e398b49b0a1053.json",
+					"name" : "virtual_paint",
 					"projectIndex" : 0
 				}
 			]

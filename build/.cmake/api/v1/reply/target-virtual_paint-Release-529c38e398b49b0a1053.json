@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "main"
+			"path" : "virtual_paint"
 		}
 	],
 	"backtrace" : 1,
@@ -67,7 +67,7 @@
 			]
 		}
 	],
-	"id" : "main::@6890427a1f51a3e7e1df",
+	"id" : "virtual_paint::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -162,8 +162,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "main",
-	"nameOnDisk" : "main",
+	"name" : "virtual_paint",
+	"nameOnDisk" : "virtual_paint",
 	"paths" : 
 	{
 		"build" : ".",
@@ -184,7 +184,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "basics/warp_perspective.cpp",
+			"path" : "projects/virtual_paint.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

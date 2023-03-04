@@ -26,7 +26,7 @@
 /home/rohit/Desktop/Coding/C++/OpenCV/build/CMakeFiles/ContinuousCoverage.dir
 /home/rohit/Desktop/Coding/C++/OpenCV/build/CMakeFiles/ContinuousMemCheck.dir
 /home/rohit/Desktop/Coding/C++/OpenCV/build/CMakeFiles/ContinuousSubmit.dir
-/home/rohit/Desktop/Coding/C++/OpenCV/build/CMakeFiles/main.dir
+/home/rohit/Desktop/Coding/C++/OpenCV/build/CMakeFiles/virtual_paint.dir
 /home/rohit/Desktop/Coding/C++/OpenCV/build/CMakeFiles/package.dir
 /home/rohit/Desktop/Coding/C++/OpenCV/build/CMakeFiles/package_source.dir
 /home/rohit/Desktop/Coding/C++/OpenCV/build/CMakeFiles/test.dir

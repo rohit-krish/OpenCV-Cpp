@@ -863,7 +863,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "learn"
+			"value" : "virtual_paint"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION",
@@ -1595,11 +1595,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "(This variable does not exist and should not be used)"
+					"value" : "Path to a program."
 				}
 			],
-			"type" : "UNINITIALIZED",
-			"value" : ""
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/git"
 		},
 		{
 			"name" : "HGCOMMAND",
@@ -1763,6 +1763,42 @@
 		},
 		{
 			"name" : "learn_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/rohit/Desktop/Coding/C++/OpenCV"
+		},
+		{
+			"name" : "virtual_paint_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/rohit/Desktop/Coding/C++/OpenCV/build"
+		},
+		{
+			"name" : "virtual_paint_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "virtual_paint_SOURCE_DIR",
 			"properties" : 
 			[
 				{

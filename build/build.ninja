@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: learn
+# Project: virtual_paint
 # Configurations: Release
 # =============================================================================
 
@@ -209,38 +209,38 @@ build ContinuousMemCheck: phony CMakeFiles/ContinuousMemCheck
 build ContinuousSubmit: phony CMakeFiles/ContinuousSubmit
 
 # =============================================================================
-# Object build statements for EXECUTABLE target main
+# Object build statements for EXECUTABLE target virtual_paint
 
 
 #############################################
-# Order-only phony target for main
+# Order-only phony target for virtual_paint
 
-build cmake_object_order_depends_target_main: phony || CMakeFiles/main.dir
+build cmake_object_order_depends_target_virtual_paint: phony || CMakeFiles/virtual_paint.dir
 
-build CMakeFiles/main.dir/basics/warp_perspective.cpp.o: CXX_COMPILER__main_Release /home/rohit/Desktop/Coding/C++/OpenCV/basics/warp_perspective.cpp || cmake_object_order_depends_target_main
-  DEP_FILE = CMakeFiles/main.dir/basics/warp_perspective.cpp.o.d
+build CMakeFiles/virtual_paint.dir/projects/virtual_paint.cpp.o: CXX_COMPILER__virtual_paint_Release /home/rohit/Desktop/Coding/C++/OpenCV/projects/virtual_paint.cpp || cmake_object_order_depends_target_virtual_paint
+  DEP_FILE = CMakeFiles/virtual_paint.dir/projects/virtual_paint.cpp.o.d
   FLAGS = -O3 -DNDEBUG
   INCLUDES = -isystem /usr/local/include/opencv4
-  OBJECT_DIR = CMakeFiles/main.dir
-  OBJECT_FILE_DIR = CMakeFiles/main.dir/basics
+  OBJECT_DIR = CMakeFiles/virtual_paint.dir
+  OBJECT_FILE_DIR = CMakeFiles/virtual_paint.dir/projects
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target main
+# Link build statements for EXECUTABLE target virtual_paint
 
 
 #############################################
-# Link the executable main
+# Link the executable virtual_paint
 
-build main: CXX_EXECUTABLE_LINKER__main_Release CMakeFiles/main.dir/basics/warp_perspective.cpp.o | /usr/local/lib/libopencv_gapi.so.4.7.0 /usr/local/lib/libopencv_highgui.so.4.7.0 /usr/local/lib/libopencv_ml.so.4.7.0 /usr/local/lib/libopencv_objdetect.so.4.7.0 /usr/local/lib/libopencv_photo.so.4.7.0 /usr/local/lib/libopencv_stitching.so.4.7.0 /usr/local/lib/libopencv_video.so.4.7.0 /usr/local/lib/libopencv_videoio.so.4.7.0 /usr/local/lib/libopencv_imgcodecs.so.4.7.0 /usr/local/lib/libopencv_dnn.so.4.7.0 /usr/local/lib/libopencv_calib3d.so.4.7.0 /usr/local/lib/libopencv_features2d.so.4.7.0 /usr/local/lib/libopencv_flann.so.4.7.0 /usr/local/lib/libopencv_imgproc.so.4.7.0 /usr/local/lib/libopencv_core.so.4.7.0
+build virtual_paint: CXX_EXECUTABLE_LINKER__virtual_paint_Release CMakeFiles/virtual_paint.dir/projects/virtual_paint.cpp.o | /usr/local/lib/libopencv_gapi.so.4.7.0 /usr/local/lib/libopencv_highgui.so.4.7.0 /usr/local/lib/libopencv_ml.so.4.7.0 /usr/local/lib/libopencv_objdetect.so.4.7.0 /usr/local/lib/libopencv_photo.so.4.7.0 /usr/local/lib/libopencv_stitching.so.4.7.0 /usr/local/lib/libopencv_video.so.4.7.0 /usr/local/lib/libopencv_videoio.so.4.7.0 /usr/local/lib/libopencv_imgcodecs.so.4.7.0 /usr/local/lib/libopencv_dnn.so.4.7.0 /usr/local/lib/libopencv_calib3d.so.4.7.0 /usr/local/lib/libopencv_features2d.so.4.7.0 /usr/local/lib/libopencv_flann.so.4.7.0 /usr/local/lib/libopencv_imgproc.so.4.7.0 /usr/local/lib/libopencv_core.so.4.7.0
   FLAGS = -O3 -DNDEBUG
   LINK_FLAGS = -rdynamic
   LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/libopencv_gapi.so.4.7.0  /usr/local/lib/libopencv_highgui.so.4.7.0  /usr/local/lib/libopencv_ml.so.4.7.0  /usr/local/lib/libopencv_objdetect.so.4.7.0  /usr/local/lib/libopencv_photo.so.4.7.0  /usr/local/lib/libopencv_stitching.so.4.7.0  /usr/local/lib/libopencv_video.so.4.7.0  /usr/local/lib/libopencv_videoio.so.4.7.0  /usr/local/lib/libopencv_imgcodecs.so.4.7.0  /usr/local/lib/libopencv_dnn.so.4.7.0  /usr/local/lib/libopencv_calib3d.so.4.7.0  /usr/local/lib/libopencv_features2d.so.4.7.0  /usr/local/lib/libopencv_flann.so.4.7.0  /usr/local/lib/libopencv_imgproc.so.4.7.0  /usr/local/lib/libopencv_core.so.4.7.0
-  OBJECT_DIR = CMakeFiles/main.dir
+  OBJECT_DIR = CMakeFiles/virtual_paint.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = main
-  TARGET_PDB = main.dbg
+  TARGET_FILE = virtual_paint
+  TARGET_PDB = virtual_paint.dbg
 
 
 #############################################
@@ -536,7 +536,7 @@ build CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles/ContinuousS
 #############################################
 # Folder: /home/rohit/Desktop/Coding/C++/OpenCV/build
 
-build all: phony main
+build all: phony virtual_paint
 
 # =============================================================================
 # Unknown Build Time Dependencies.
