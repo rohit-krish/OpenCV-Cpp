@@ -2,8 +2,48 @@
 Using opencv in C++
 
 ## I'm using Visual Studio Code as my IDE
+go through the [article](https://www.geeksforgeeks.org/how-to-install-opencv-in-c-on-linux/) to download and setup opencv
 
-__to run opencv program__
+### There are two ways we can work with opencv c++ in vscode
+__first and simple method__
+
+```
+cd ~/OpenCV/build
+cmake -D CMAKE_BUILD_TYPE=Release -D OPENCV_GENERATE_PKGCONFIG=YES -D CMAKE_INSTALL_PREFIX=/usr/local ../opencv
+sudo make 
+sudo make install
+```
+
+```
+pkg-config --modversion opencv4
+```
+now if you get a version correctly then all set
+
+now you can add the below code to your .vscode/c_cpp_properties.json
+```
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/local/include/opencv4/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-clang-x64"
+        }
+    ],
+    "version": 4
+}
+```
+to run, type the below code on terminal
+```
+g++ -Wall <file_name.cpp> -o <output_name> `pkg-config --cflags --libs opencv4`
+```
+__second method__
 install the below extensions
 ```
 twxs.cmake
