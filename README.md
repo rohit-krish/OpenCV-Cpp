@@ -8,10 +8,7 @@ go through the [article](https://www.geeksforgeeks.org/how-to-install-opencv-in-
 __first and simple method__
 
 ```
-cd ~/OpenCV/build
-cmake -D CMAKE_BUILD_TYPE=Release -D OPENCV_GENERATE_PKGCONFIG=YES -D CMAKE_INSTALL_PREFIX=/usr/local ../opencv
-sudo make 
-sudo make install
+sudo apt install libopencv-dev
 ```
 
 ```
@@ -56,4 +53,4 @@ ms-vscode.cmake-tools
 <img src="https://raw.githubusercontent.com/rohit-krish/OpenCV-Cpp/main/command%20palette%20screen%20shot.png" alt="screenshot of my vscode command pallette">
 
 * and to build go for the option <b>CMake: Build</b><br>
-* and the executable will be stored on the build folder, you can run it just like you run any other c++ program, or you can use <b>CMake: Run Without Debugging<b> option that you will get in the command pallete after install the extensions
+* and the executable will be stored on the build folder, you can run it just like you run any other c++ program, or you can use <b>CMake: Run Without Debugging<b> option that you will get in the command pallete after installing the extensions.
