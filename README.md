@@ -1,33 +1,42 @@
-# OpenCV-Cpp
+# OpenCV C++
 Using opencv in C++
 
-## I'm using Visual Studio Code as my IDE
-go through the [article](https://www.geeksforgeeks.org/how-to-install-opencv-in-c-on-linux/) to download and setup opencv
-
-### There are two ways we can work with opencv c++ in vscode
-__first and simple method__
-
 ```
-sudo apt install libopencv-dev
+sudo apt install g++ cmake make git libgtk2.0-dev pkg-config
 ```
 
+## Method 01
+
 ```
+git clone https://github.com/opencv/opencv.git
+mkdir -p build && cd build
+cmake -D CMAKE_BUILD_TYPE=Release -D OPENCV_GENERATE_PKGCONFIG=YES -D CMAKE_INSTALL_PREFIX=/usr/local ..
+make -j4
+sudo make install
+```
+
+### test
+```
+pkg-config --cflags --libs opencv4
 pkg-config --modversion opencv4
 ```
-now if you get a version correctly then all set
+to run, type the below code on terminal
+```
+g++ -Wall <file_name.cpp> -o <output_name> `pkg-config --cflags --libs opencv4`
+```
 
-now you can add the below code to your .vscode/c_cpp_properties.json
+for vscode users if you want linting then you have to add the below code to your .vscode/c_cpp_properties.json
 ```
 {
     "configurations": [
         {
-            "name": "Linux",
+            "name": "OpenCV C++",
             "includePath": [
                 "${workspaceFolder}/**",
                 "/usr/local/include/opencv4/**"
             ],
             "defines": [],
-            "compilerPath": "/usr/bin/clang",
+            "compilerPath": "/usr/bin/g++",
             "cStandard": "c17",
             "cppStandard": "c++14",
             "intelliSenseMode": "linux-clang-x64"
@@ -36,11 +45,10 @@ now you can add the below code to your .vscode/c_cpp_properties.json
     "version": 4
 }
 ```
-to run, type the below code on terminal
-```
-g++ -Wall <file_name.cpp> -o <output_name> `pkg-config --cflags --libs opencv4`
-```
-__second method__
+
+
+## Method 02
+
 install the below extensions
 ```
 twxs.cmake
@@ -53,4 +61,4 @@ ms-vscode.cmake-tools
 <img src="https://raw.githubusercontent.com/rohit-krish/OpenCV-Cpp/main/command%20palette%20screen%20shot.png" alt="screenshot of my vscode command pallette">
 
 * and to build go for the option <b>CMake: Build</b><br>
-* and the executable will be stored on the build folder, you can run it just like you run any other c++ program, or you can use <b>CMake: Run Without Debugging<b> option that you will get in the command pallete after installing the extensions.
+* you can run it just like you run any other c++ program, or you can use <b>CMake: Run Without Debugging</b> option that you will get in the command pallete after installing the extensions (the executable will be stored on the build folder).
